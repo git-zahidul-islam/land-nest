@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "react-multi-carousel/lib/styles.css";
+
 
 const images = [
   {
