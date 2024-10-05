@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="mx-auto flex justify-between items-center">
         <div className="w-full">
           {/* first part */}
-          <div className="flex justify-between items-center w-full py-5 md:px-10 px-3">
+          <div className="flex justify-between items-center w-full py-2 md:px-10 px-3">
             <div className="w-52">
               <img
                 className="md:w-[55%] w-[45%]"
