@@ -20,9 +20,9 @@ const Card = () => {
           <p className="text-base">Location is here</p>
           <p className="text-lg">Villa</p>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between gap-2 items-center">
           <p className="font-semibold md:text-xl text-lg">7,80,000$</p>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center flex-wrap gap-3">
             <div className="flex items-center gap-3">
               <FaBed className="text-[#1DB2FF] md:text-2xl text-xl" />
               <p>4</p>

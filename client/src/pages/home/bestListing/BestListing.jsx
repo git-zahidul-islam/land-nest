@@ -31,7 +31,7 @@ const BestListing = () => {
             </div>
 
             {/* --- all card show here ---*/}
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 md:gap-5 gap-2">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 lg:gap-5 md:gap-3 gap-2">
                 <Suspense fallback={<div className="h-full w-full bg-green-400 transition-all animate-bounce duration-700"></div>}>
                     <Card/>
                 </Suspense>
