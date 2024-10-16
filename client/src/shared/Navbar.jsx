@@ -10,7 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full">
+    // TODO: nav ber class use position fixed and make some functionality
+    <nav className="absolute top-0 z-50 w-full">
       <section className="text-black relative">
       <div className="mx-auto flex justify-between items-center">
         <div className="w-full">

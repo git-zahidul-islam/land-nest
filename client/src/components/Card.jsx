@@ -5,9 +5,9 @@ import { PiMapPinSimpleAreaLight } from "react-icons/pi";
 const Card = () => {
   return (
     <div className="">
-      <div className="h-[270px]">
+      <div className="h-[270px] overflow-hidden">
         <img
-          className="w-full h-full object-cover rounded-t-md"
+          className="w-full h-full object-cover rounded-t-md hover:scale-110 transition-all duration-700"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKRaaTyYgMvh4aFalvKtAf7Dku5lBImUDLQ&s"
           alt="card images"
         />

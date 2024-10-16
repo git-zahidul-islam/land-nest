@@ -1,16 +1,17 @@
 import { lazy, Suspense } from "react";
-import HomeSearch from "../../../components/HomeSearch/HomeSearch";
-import Banner from "../banner/Banner";
-
-// lazy loading
-const Card = lazy(()=> import('../../../components/card/Card'));
+const Banner = lazy(() => import('../banner/Banner'));
+const BestListing = lazy(() => import('../bestListing/BestListing'));
 
 
 const Home = () => {
     return (
         <div>
-            <Banner/>
-                        
+            <Suspense fallback={<div className="h-full w-full bg-green-400 transition-all animate-bounce duration-700"></div>}>
+                <Banner/>
+            </Suspense>
+            <Suspense fallback={<div className="h-full w-full bg-green-400 transition-all animate-bounce duration-700"></div>}>
+                <BestListing/>         
+            </Suspense>
         </div>
     );
 };

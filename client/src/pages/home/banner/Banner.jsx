@@ -30,7 +30,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div>
+    <section className="mb-10">
       <div className="md:flex justify-center relative">
         <div className="relative w-full md:h-[720px] h-[420px] overflow-hidden">
           {images.map((image, index) => (
@@ -43,7 +43,7 @@ const Banner = () => {
               <img
                 src={image.src}
                 alt={`Slide ${index + 1}`}
-                className="w-full md:h-[720px] h-[420px] object-cover rounded-bl-[10px] md:rounded-bl-[60px] rounded-br-[10px] md:rounded-br-[60px]"
+                className="w-full md:h-[720px] h-[420px] object-cover rounded-bl-[10px] md:rounded-bl-[40px] rounded-br-[10px] md:rounded-br-[40px]"
               />
             </div>
           ))}
@@ -91,7 +91,7 @@ const Banner = () => {
           </div>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 
