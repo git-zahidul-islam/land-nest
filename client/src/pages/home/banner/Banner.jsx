@@ -24,9 +24,9 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="md:pb-[60px]">
-      <div className="md:relative md:flex justify-center">
-        <div className="relative w-full md:h-[550px] h-[280px] overflow-hidden">
+    <div>
+      <div className="md:flex justify-center">
+        <div className="relative w-full md:h-[720px] h-[280px] overflow-hidden">
           <div
             className="transition-opacity duration-700 ease-in-out"
             style={{ opacity: 1 }}
@@ -41,39 +41,13 @@ const Banner = () => {
                 <img
                   src={image.src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full md:h-[550px] h-[280px] object-cover"
+                  className="w-full md:h-[720px] h-[280px] object-cover rounded-bl-[30px] md:rounded-bl-[60px] rounded-br-[30px] md:rounded-br-[60px]"
                 />
               </div>
             ))}
           </div>
         </div>
 
-        {/* property details */}
-        <div className="md:absolute -bottom-[60px] md:mt-0 mt-1 rounded-xl bg-white border border-gray-800/30 md:w-[70%] w-[90%] mx-auto md:p-6 p-4 shadow-md">
-          <div className="flex justify-between md:flex-row flex-col md:space-y-0 space-y-3 md:relative">
-
-            <p className="md:absolute text-center -top-10 bg-[#1DB2FF] rounded-3xl py-1 px-5 text-sm font-medium text-white">Feature</p>
-
-            <div className="md:space-y-5 space-y-2">
-              <h5 className="md:text-2xl text-lg font-semibold text-black/80">
-                property name here || title
-              </h5>
-              <p className="text-black/45 text-sm">Added: 02/03/2024</p>
-            </div>
-            <div className="md:space-y-5 space-y-2">
-              <h5 className="md:text-2xl text-lg font-semibold text-black/80">
-                Price
-              </h5>
-              <p className="text-black/45 text-sm">22,000$</p>
-            </div>
-            <div className="md:space-y-5 space-y-2">
-              <h5 className="md:text-2xl text-lg font-semibold text-black/80">
-                Areas
-              </h5>
-              <p className="text-black/45 text-sm">12,000 Sqr</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

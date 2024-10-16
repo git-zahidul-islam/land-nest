@@ -10,7 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-black bg-white relative">
+    <nav className="fixed top-0 z-50 w-full">
+      <section className="text-black relative">
       <div className="mx-auto flex justify-between items-center">
         <div className="w-full">
           {/* first part */}
@@ -36,7 +37,7 @@ const Navbar = () => {
           </div>
 
           {/* second part */}
-          <div className="hidden md:flex bg-[#E7F6FD] text-black/70 py-5 pl-10">
+          <div className="hidden md:flex bg-[#E7F6FD]/60 text-black/70 py-5 pl-10">
             <div className="hidden md:flex lg:gap-16 md:gap-5 text-center font-semibold">
               <Link to={"/"}>Home</Link>
               <Link to={"/donation-request"}>Donation Request</Link>
@@ -74,6 +75,7 @@ const Navbar = () => {
           <Link to={"/login"}>Login</Link>
         </div>
       </div>
+      </section>
     </nav>
   );
 };

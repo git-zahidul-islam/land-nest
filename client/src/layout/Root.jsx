@@ -6,7 +6,6 @@ const Root = () => {
         <div>
             <Navbar/>
             <Outlet/>
-            <p className="bg-gray-700 my-10">footer</p>
         </div>
     );
 };
